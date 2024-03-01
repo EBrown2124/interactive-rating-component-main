@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  background:hsl(216, 12%, 8%) ;
+}
+
+.card {
+  margin: 227px 0 0 0;
+  background: hsl(213, 19%, 18%);
+  width: 482px;
+  height: 489px;
+  padding: 25px 25px;
+  border-radius: 35px
+}
+
+.card img {
+  margin: 13px;
+  padding: 20px;
+  background-color: hsl(216, 12%, 22%);
+  border-radius: 40px;
+  width: 60px;
+}
+
+.card h1 {
+  color: white;
+  margin: 17px 13px;
+}
+
+.card p {
+  color: hsl(216, 12%, 54%);
+  margin: 0 13px;
+  padding: 0 18px 0 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0 0 0;
+  font-size: 20px;
+  color: hsl(216, 12%, 54%);
+}
+
+.circle{
+  background-color: hsl(216, 12%, 22%);
+  border-radius: 40px;
+  padding: 20px 25px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit h3 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin: 33px 12px;
+  padding: 13px 50px;
+  background: hsl(25, 97%, 53%);
+  text-align: center;
+  border-radius: 40px
+}
