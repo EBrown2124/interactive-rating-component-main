@@ -18,10 +18,10 @@ body {
   width: 482px;
   height: 489px;
   padding: 25px 25px;
-  border-radius: 35px
+  border-radius: 35px;
 }
 
-.card img {
+.star {
   margin: 13px;
   padding: 20px;
   background-color: hsl(216, 12%, 22%);
@@ -42,6 +42,10 @@ body {
   line-height: 1.5;
 }
 
+.rate{
+  transition: transform 1s ease-in;
+}
+
 .rating {
   display: flex;
   justify-content: space-around;
@@ -57,9 +61,10 @@ body {
   width: 65px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
-.submit h3 {
+.submit {
   display: flex;
   color: white;
   justify-content: center;
@@ -67,5 +72,89 @@ body {
   padding: 13px 50px;
   background: hsl(25, 97%, 53%);
   text-align: center;
-  border-radius: 40px
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.thank-you{
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you h1 {
+  margin: 39px 0 18px 0;
+  color: white;
+}
+
+.thank-you h3 {
+  margin: 35px 0 0 0;
+  color: hsl(25, 97%, 53%);
+  font-weight: 100;
+  background-color:hsl(216, 12%, 22%);
+  padding: 6px 30px;
+  border-radius: 35px;
+}
+
+.phone{
+  width: 200px;
+  padding: 20px 0 0 0;
+}
+
+.circle:hover {
+  cursor: pointer;
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background: white;
+}
+
+.circle.active {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.ratebox.active .rate{
+  overflow: hidden;
+  height: 0;
+  animation: fade1 1s ease-in-out;
+}
+
+.ratebox.active .thank-you{
+  overflow: visible;
+  animation: fade2 1s ease-in-out;
+  max-height:3px;
+  opacity: 1;
+}
+
+
+
+
+@keyframes fade1 {
+  from {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fade2 {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
