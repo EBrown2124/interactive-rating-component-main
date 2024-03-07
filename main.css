@@ -12,6 +12,16 @@ body {
   background:hsl(216, 12%, 8%) ;
 }
 
+.attribution {
+  margin: 15px 0 0 0;
+  color: white;
+}
+
+.attribution a {
+  text-decoration: none;
+  color:hsl(216, 12%, 54%);
+}
+
 .card {
   margin: 227px 0 0 0;
   background: hsl(213, 19%, 18%);
@@ -159,6 +169,63 @@ body {
   }
 }
 
-@media max-width:400px {
+@media (max-width: 400px) {
+  .attribution {
+    padding: 0px 70px;
+    text-align: center;
+  }
 
+  .card {
+    width: 330px;
+    height: 350px;
+    margin: 145px 0 0 0;
+  }
+
+  .star {
+    margin: 0px 13px 0px 13px;
+    width: 40px;
+    padding: 13px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 13px;
+    padding: 0;
+  }
+
+  .rating {
+    margin: 20px 0 0 0;
+    font-size: 15px;
+  }
+
+  .circle {
+    padding: 13px 10px;
+    width: 44px;
+  }
+
+  .submit{
+    margin: 33px 0px;
+    padding: 11px 36px;
+    font-size: 14px;
+  }
+  
+  .thank-you h3 {
+    margin: 20px 0 0 0;
+    font-weight: lighter;
+    padding: 6px 14px;
+    font-size: 15px;
+  }
+
+  .thank-you h1 {
+    margin: 25px 0 18px 0;
+    font-size: 25px;
+  }
+
+  .phone {
+    width: 155px;
+    padding: 0px 0 0 0;
+  }
 }
