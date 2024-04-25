@@ -10,6 +10,7 @@ body {
   align-items: center;
   font-family: "Overpass", sans-serif;
   background:hsl(216, 12%, 8%) ;
+  height: 100vh;
 }
 
 .attribution {
@@ -23,7 +24,6 @@ body {
 }
 
 .card {
-  margin: 227px 0 0 0;
   background: hsl(213, 19%, 18%);
   width: 482px;
   height: 489px;
